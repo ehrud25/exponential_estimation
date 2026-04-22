@@ -1,0 +1,80 @@
+# Root ignore rules for both `back` and `front`
+
+### Common editor / OS files ###
+.DS_Store
+.idea/
+.vscode/
+*.iws
+*.iml
+*.ipr
+
+### Environment files ###
+.env
+.env.*
+key.env
+!.env.example
+
+### Security keys ###
+*.pem
+back/**/keys/private-key.pem
+
+### Back / Gradle / JVM ###
+back/.gradle/
+back/**/build/
+!back/gradle/wrapper/gradle-wrapper.jar
+!back/**/src/main/**/build/
+!back/**/src/test/**/build/
+back/**/out/
+!back/**/src/main/**/out/
+!back/**/src/test/**/out/
+back/**/.apt_generated
+back/**/.classpath
+back/**/.factorypath
+back/**/.project
+back/**/.settings
+back/**/.springBeans
+back/**/.sts4-cache
+back/**/bin/
+!back/**/src/main/**/bin/
+!back/**/src/test/**/bin/
+back/nbproject/private/
+back/nbbuild/
+back/dist/
+back/nbdist/
+back/.nb-gradle/
+
+### Back personal / secret config ###
+back/**/application-personal.yml
+back/**/application-local.yml
+back/**/application-local-*.yml
+back/**/application-ldk.yml
+back/**/*-secret.yml
+back/**/storage-database-local.yml
+
+### Back local docs ###
+back/**/*.md
+
+### Project local docs ###
+docs/**/*.md
+
+### Front / Node / Next ###
+front/node_modules/
+front/.pnp
+front/.pnp.*
+front/.yarn/*
+!front/.yarn/patches
+!front/.yarn/plugins
+!front/.yarn/releases
+!front/.yarn/versions
+front/coverage/
+front/.next/
+front/out/
+front/build/
+front/npm-debug.log*
+front/yarn-debug.log*
+front/yarn-error.log*
+front/.pnpm-debug.log*
+front/.vercel/
+front/*.tsbuildinfo
+front/next-env.d.ts
+front/STACK.md
