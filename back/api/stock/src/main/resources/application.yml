@@ -27,10 +27,10 @@ stock:
     data-dir: ${STOCK_GEMINI_DATA_DIR:./data}
     top500:
       # 국내 탑500: 매일 03:15 KST
-      cron: ${STOCK_GEMINI_TOP500_CRON:0 20 15 * * *}
+      cron: ${STOCK_GEMINI_TOP500_CRON:0 30 20 * * *}
       # 해외 탑500: 매일 03:20 KST
       overseas:
-        cron: ${STOCK_GEMINI_TOP500_OVERSEAS_CRON:0 35 15 * * *}
+        cron: ${STOCK_GEMINI_TOP500_OVERSEAS_CRON:0 30 20 * * *}
 
 # 토스페이먼츠 (무료 3회 이후 분석 유료 결제 5,000원)
 toss:

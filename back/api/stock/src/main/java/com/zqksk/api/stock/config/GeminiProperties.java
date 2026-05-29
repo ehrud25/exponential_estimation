@@ -1,8 +1,9 @@
 package com.zqksk.api.stock.config;
 
+import org.springframework.boot.context.properties.ConfigurationProperties;
+
 import lombok.Getter;
 import lombok.Setter;
-import org.springframework.boot.context.properties.ConfigurationProperties;
 
 /**
  * Google Gemini API 설정.
