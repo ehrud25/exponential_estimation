@@ -40,7 +40,7 @@ public class Top500AnalysisBatchJob {
     private final GeminiClient geminiClient;
     private final Top100AnalysisStore store;
 
-    @Scheduled(cron = "${stock.gemini.top500.cron:0 0 0 * * *}", zone = "Asia/Seoul")
+    @Scheduled(cron = "${stock.gemini.top500.cron:0 0 3 * * *}", zone = "Asia/Seoul")
     public void run() {
         if (!kisProperties.isConfigured()) {
             log.warn("탑500 배치를 건너뜁니다. KIS API 설정이 없습니다.");

@@ -24,7 +24,7 @@ import org.springframework.web.client.RestTemplate;
 @RequiredArgsConstructor
 public class GeminiClient {
 
-    private static final String BASE = "https://generativelanguage.googleapis.com/v1/models";
+    private static final String BASE = "https://generativelanguage.googleapis.com/v1beta/models";
     private static final ObjectMapper MAPPER = new ObjectMapper();
 
     private final GeminiProperties geminiProperties;

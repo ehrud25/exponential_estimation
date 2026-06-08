@@ -20,6 +20,7 @@ back/**/keys/private-key.pem
 
 ### Back / Gradle / JVM ###
 back/.gradle/
+back/**/.gradle/
 back/**/build/
 !back/gradle/wrapper/gradle-wrapper.jar
 !back/**/src/main/**/build/
